@@ -105,12 +105,14 @@ public class MobFfmpegPlugin implements MethodCallHandler {
             public void apply(int result) {
 
                 if (result != 0) {
-                    String output = FFmpeg.getLastCommandOutput();
-                    resultado.success(output);
+                    // String output = FFmpeg.getLastCommandOutput();
+                    // resultado.success(output);
+                    resultado.success("erro");
                 }
                 else{
-                    String output = FFmpeg.getLastCommandOutput();
-                    resultado.success(output);
+                    // String output = FFmpeg.getLastCommandOutput();
+                    // resultado.success(output);
+                    resultado.success("ok");
                 }
 
             }

@@ -3,6 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'mob_ffmpeg'
+  s.swift_version    = '4.2'
   s.version          = '0.0.1'
   s.summary          = 'FFmpeg'
   s.description      = <<-DESC
@@ -15,7 +16,8 @@ FFmpeg
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
+  s.dependency 'mobile-ffmpeg-full'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 end
 
